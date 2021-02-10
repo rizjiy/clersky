@@ -105,3 +105,136 @@
             font-size: 11px
         &__item
             font-size: 11px
+@media (max-width: 768px)
+    .header
+        padding: 10px 0
+        &--fixed
+            position: fixed
+            left: 0
+            top: 0
+            right: 0
+            z-index: 100
+        &__login
+            display: none
+            position: fixed
+            background-color: $green
+            right: 0
+            top: 0
+            bottom: 0
+            &--visible
+                display: flex
+                flex-direction: column
+
+    .navbar-button
+        width: 16px
+        height: 11px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        padding: 0
+        border: none
+        cursor: pointer
+        background-color: $green
+        &__line
+            width: 16px
+            height: 1px
+            background-color: $white
+    .container
+        max-width: 576px
+        width: 92%
+    .main
+        margin-top: 82px
+        &__section
+            flex-direction: column-reverse
+            align-items: center
+        &__img,&__pic
+            min-width: 550px
+    .about
+        margin-top: 60px
+        &__section
+            flex-direction: column
+            align-items: center
+        &__col1
+            order: 1
+        &__col2
+            order: 2
+        &__col3
+            order: 3
+            margin-top: 20px
+        &__col4
+            order: 4
+        &__title
+            max-width: 100%
+            font-size: 31px
+        &__text
+            max-width: 100%
+        &__img, &__pic
+            max-width: 400px
+        &__human, &__parts
+            display: flex
+            align-items: center
+            flex-direction: column
+    .partners
+        &__title
+            font-size: 34px
+        &__section
+            padding: 0 0 100px 0px
+        &__pic
+            width: 95px
+    .quality
+        &__title
+            font-size: 32px
+        &__about
+            flex-wrap: wrap
+            margin-top: 33px
+        &__card
+            width: 50%
+            margin-top: 30px
+    .interests
+        &__about
+            flex-direction: column
+            align-items: center
+        &__card
+            margin-top: 15px
+            max-width: 100%
+    .feedback
+        &__about
+            flex-direction: column
+        &__img, &__pic, &__circle
+            display: none
+    .get-started
+        &__left, &__right
+            display: none
+    .subscribe
+        &__section
+            display: block
+        &__form
+            width: 90%
+            margin-top: 15px
+        &__email
+            max-width: 100%
+    .footer
+        &__bottom
+            flex-direction: column
+@media (max-width: 576px)
+    .main
+        &__img,&__pic
+            min-width: 100%
+    .about
+        &__pic, &__img
+            width: 100%
+    .partners
+        &__companies
+            flex-direction: column
+        &__pic
+            margin-top: 15px
+            width: 120px
+    .get-started
+        &__title
+            font-size: 36px
+        &__subtitle
+            font-size: 15px
+    .footer
+        &__section
+            flex-direction: column
