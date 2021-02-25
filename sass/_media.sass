@@ -115,16 +115,23 @@
             right: 0
             z-index: 100
         &__login
-            display: none
+            width: 285px
+            display: flex
+            flex-direction: column
             position: fixed
-            background-color: $green
-            right: 0
+            background-color: $white
+            right: -285px
             top: 0
             bottom: 0
-            &--visible
-                display: flex
-                flex-direction: column
-
+            border: 1px solid $green
+        &__sign-in
+            color: $green
+            margin-top: 40px
+        &__phone
+            color: $green
+            margin-top: 10px
+        &__button
+            margin-top: 10px
     .navbar-button
         width: 16px
         height: 11px
@@ -135,11 +142,13 @@
         padding: 0
         border: none
         cursor: pointer
-        background-color: $green
+        &__open
+            background-color: $green
         &__line
             width: 16px
             height: 1px
-            background-color: $white
+            &--open
+                background-color: $white
     .container
         max-width: 576px
         width: 92%
@@ -149,7 +158,7 @@
             flex-direction: column-reverse
             align-items: center
         &__img,&__pic
-            min-width: 550px
+            max-width: 550px
     .about
         margin-top: 60px
         &__section
@@ -220,7 +229,7 @@
 @media (max-width: 576px)
     .main
         &__img,&__pic
-            min-width: 100%
+            width: 100%
     .about
         &__pic, &__img
             width: 100%
